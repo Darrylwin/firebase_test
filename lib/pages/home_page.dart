@@ -10,6 +10,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   FirebaseFirestore firestore = FirebaseFirestore.instance;
+  Stream movies = FirebaseFirestore.instance.collection('movies').snapshots();
   @override
   Widget build(BuildContext context) {
     return const Scaffold();
