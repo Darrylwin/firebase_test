@@ -12,8 +12,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   // FirebaseFirestore firestore = FirebaseFirestore.instance;
-  Stream<QuerySnapshot> movies =
-      FirebaseFirestore.instance.collection('movies').snapshots();
+  Stream<QuerySnapshot> movies = FirebaseFirestore.instance.collection('movies').snapshots();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
